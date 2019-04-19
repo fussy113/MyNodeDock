@@ -17,5 +17,5 @@ services:
     environment:
       PORT: ${NUXT_PORT}
       HOST: ${HOST}
-    command: yarn dev
+    command: yarn start
     restart: always
