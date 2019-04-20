@@ -6,4 +6,4 @@ COPY $APPLICATION_PATH/package.json /var/www/package.json
 COPY $APPLICATION_PATH/yarn.lock /var/www/yarn.lock
 
 WORKDIR /var/www
-RUN yarn install
+# RUN yarn install
