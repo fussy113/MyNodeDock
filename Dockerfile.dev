@@ -1,9 +1,5 @@
 ARG NODE_VERSION
 
 FROM node:${NODE_VERSION}-alpine
-ARG APPLICATION_PATH
-COPY $APPLICATION_PATH/package.json /var/www/package.json
-COPY $APPLICATION_PATH/yarn.lock /var/www/yarn.lock
 
 WORKDIR /var/www
-# RUN yarn install

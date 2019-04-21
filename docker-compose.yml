@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  node:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        NODE_VERSION: ${NODE_VERSION}
+        APPLICATION_PATH: ${APPLICATION_PATH}
+    tty: true
+    working_dir: /var/www
+    environment:
+      PORT: ${NUXT_PORT}
+      HOST: ${HOST}
+    ports:
+      - "${NUXT_PORT}:${NUXT_PORT}"
+    command: yarn start
+    restart: always
