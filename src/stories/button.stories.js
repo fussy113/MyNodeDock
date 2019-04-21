@@ -9,4 +9,7 @@ storiesOf('Button', module)
       components: { MyButton },
       template: '<my-button />',
     }),
+    {
+      info: {}
+    }
   )
