@@ -1,16 +1,27 @@
-# MyNodeDock
+# MyNodeDock ~ Vue ~
 
-## branches
+## requirement
 
-* Nuxt
-** Nuxt.jsの開発環境
-* NuxtWithStoryBook
-** Nuxt.js + StoryBook
-* React
-** Reactの開発環境
-* Vue
-** Vueの開発環境
-
-##  requirement
 * Docker
 * docker-compose
+
+## usage
+
+* Please Install **docker** command and **docker-compose** command
+
+In your terminal,
+```
+git clone https://github.com/fussy113/MyNodeDock.git:Vue
+
+cd MyNodeDock
+
+cp .env.example .env
+
+docker-compose build
+
+docker-compose run --rm workspace yarn install
+
+docker-compose up
+```
+
+* Please Connect http://localhost:3000
