@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+  workspace:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+      args:
+        NODE_VERSION: ${NODE_VERSION}
+        APPLICATION_PATH: ${APPLICATION_PATH}
+    tty: true
+    working_dir: /var/www
+    volumes:
+      - ${APPLICATION_PATH}:/var/www
+    ports:
+      - "${VUE_PORT}:${VUE_PORT}"
+    environment:
+      PORT: ${VUE_PORT}
+      HOST: ${HOST}
+    command: yarn start
+    restart: always
