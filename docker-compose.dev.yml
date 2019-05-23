@@ -13,9 +13,9 @@ services:
     volumes:
       - ${APPLICATION_PATH}:/var/www
     ports:
-      - "${NUXT_PORT}:${NUXT_PORT}"
+      - "${REACT_PORT}:${REACT_PORT}"
     environment:
-      PORT: ${NUXT_PORT}
+      PORT: ${REACT_PORT}
       HOST: ${HOST}
     command: yarn start
     restart: always
