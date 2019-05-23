@@ -1,2 +1,4 @@
 .env
+.vscode
+.idea
 src/node_modules/*
