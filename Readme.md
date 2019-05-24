@@ -11,7 +11,7 @@
 
 In your terminal,
 ```
-git clone https://github.com/fussy113/MyNodeDock.git:React
+git clone -b React https://github.com/fussy113/MyNodeDock.git
 
 cd MyNodeDock
 
