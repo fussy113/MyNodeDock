@@ -11,7 +11,7 @@
 
 In your terminal,
 ```
-git clone https://github.com/fussy113/MyNodeDock.git:Nuxt
+git clone -b Nuxt https://github.com/fussy113/MyNodeDock.git
 
 cd MyNodeDock
 
