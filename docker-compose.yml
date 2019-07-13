@@ -4,14 +4,15 @@ services:
   workspace:
     build:
       context: .
-      dockerfile: Dockerfile.dev
+      dockerfile: Dockerfile
       args:
         NODE_VERSION: ${NODE_VERSION}
         APPLICATION_PATH: ${APPLICATION_PATH}
     tty: true
     working_dir: /var/www
     volumes:
-      - ${APPLICATION_PATH}:/var/www
+      - "${APPLICATION_PATH}:/var/www"
+      - "/var/www/node_modules"
     ports:
       - "${VUE_PORT}:${VUE_PORT}"
     environment:
