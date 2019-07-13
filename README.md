@@ -1,16 +1,8 @@
 # MyNodeDock
 
-## branches
+## tryTypeScript
 
-* Nuxt
-** Nuxt.jsの開発環境
-* NuxtWithStoryBook
-** Nuxt.js + StoryBook
-* React
-** Reactの開発環境
-* Vue
-** Vueの開発環境
+- TypeScript試したい用
 
 ##  requirement
 * Docker
-* docker-compose
