@@ -16,11 +16,11 @@ services:
     command: yarn dev
     tty: true
 
-  # storybook:
-    # <<: *app_base
-    # ports:
-    #   - "${STORY_BOOK_PORT}:${STORY_BOOK_PORT}"
-    # command: yarn storybook
+  storybook:
+    <<: *app_base
+    ports:
+      - "${STORY_BOOK_PORT}:${STORY_BOOK_PORT}"
+    command: yarn storybook
 
 volumes:
   node_modules:
