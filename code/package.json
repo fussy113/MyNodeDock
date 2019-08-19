@@ -1,0 +1,40 @@
+{
+  "name": "MyNodeDock",
+  "version": "1.0.0",
+  "description": "sample Nuxt",
+  "author": "",
+  "private": true,
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development nodemon server/index.ts --watch server",
+    "build": "nuxt build",
+    "start": "cross-env NODE_ENV=production node server/index.ts",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.3.6",
+    "@nuxtjs/bulma": "^1.2.1",
+    "@nuxtjs/pwa": "^3.0.0-beta.16",
+    "cross-env": "^5.2.0",
+    "express": "^4.16.4",
+    "node-sass": "^4.12.0",
+    "nuxt": "^2.0.0",
+    "sass-loader": "^7.2.0",
+    "ts-node": "^8.3.0",
+    "vue-property-decorator": "^8.2.1"
+  },
+  "devDependencies": {
+    "@nuxt/typescript": "^2.8.1",
+    "@nuxtjs/eslint-config": "^1.0.1",
+    "@nuxtjs/eslint-module": "^1.0.0",
+    "@vue/test-utils": "^1.0.0-beta.27",
+    "babel-eslint": "^10.0.1",
+    "babel-jest": "^24.1.0",
+    "eslint": "^6.1.0",
+    "eslint-plugin-nuxt": ">=0.4.2",
+    "jest": "^24.1.0",
+    "nodemon": "^1.18.9",
+    "vue-jest": "^4.0.0-0"
+  }
+}
