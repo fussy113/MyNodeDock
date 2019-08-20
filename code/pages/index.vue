@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    testa
+    Index Page
   </div>
 </template>
 

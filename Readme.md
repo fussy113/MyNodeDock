@@ -1,8 +1,21 @@
-# nuxt.js with storybook
+# nuxt.js with storybook　~ typescriptを添えて
 
-## Usage
+## 構成
 
-* Please Install Docker and Docker-compose
+* Nuxt 2.8.x
+  * axios
+  * bluma
+  * express
+  * jest
+  * ESLint
+  * typescript
+  * scss
+* storybook 5.0.x
+  * アドオンまだ
+
+## 使い方
+
+* Docker、docker-composeつかいます
 
 ```
 git clone -b NuxtWithStoryBook https://github.com/fussy113/MyNodeDock.git
@@ -11,9 +24,13 @@ cd MyNodeDock
 
 cp .env.example .env
 
-docker-compose build
-
-docker-compose run --rm node yarn install
-
-docker-compose up -d
+./initialize.sh
 ```
+
+## 確認方法
+
+* Nuxt
+  * http://localhost:3000
+_
+* StoryBook
+  * http://localhost:9001
