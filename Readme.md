@@ -45,7 +45,7 @@ docker-compose up -d
 # 新しいパッケージインストール時
 docker-compose run --rm app yarn add hogehoge
 
-# 何か様子がおかしい
+# 何か様子がおかしい...そう思ったら
 docker-compose down -v
 ./initialize.sh
 ```
@@ -54,6 +54,6 @@ docker-compose down -v
 
 * Nuxt
   * http://localhost:3000
-_
+
 * StoryBook
   * http://localhost:9001
