@@ -26,7 +26,8 @@
     "vue-property-decorator": "^8.2.1"
   },
   "devDependencies": {
-    "@nuxt/typescript": "^2.8.1",
+    "@nuxt/types": "^0.2.4",
+    "@nuxt/typescript-build": "^0.1.10",
     "@nuxtjs/eslint-config": "^1.0.1",
     "@nuxtjs/eslint-module": "^1.0.0",
     "@storybook/addon-knobs": "^5.1.11",
