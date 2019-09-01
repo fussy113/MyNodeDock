@@ -1,27 +1,45 @@
 # MyNodeDock ~ Nuxt ~
 
-## requirement
+## 構成
+
+* Nuxt 2.9.x
+* Vuetify
+* Sass-loader
+
+## 必要なもの
 
 * Docker
 * docker-compose
 
-## usage
+## 使用方法
 
-* Please Install **docker** command and **docker-compose** command
+1. ターミナルで実行
 
-In your terminal,
 ```
 git clone -b Nuxt https://github.com/fussy113/MyNodeDock.git
 
 cd MyNodeDock
 
+# envファイルは適宜変更してください
 cp .env.example .env
 
-docker-compose build
-
-docker-compose run --rm workspace yarn install
-
-docker-compose up
+.initialize.sh
 ```
 
-* Please Connect http://localhost:3000
+2. http://localhost:3000 でアクセスできます
+
+* 良く使うコマンド
+
+```
+docker-compose down
+
+# 2回目以降は下記コマンドで立ち上がります。
+docker-compose up -d
+
+# 新しいパッケージインストール時
+docker-compose run --rm app yarn add hogehoge
+
+# 何か様子がおかしい...そう思ったら
+docker-compose down -v
+./initialize.sh
+```
