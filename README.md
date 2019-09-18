@@ -5,6 +5,10 @@
 * Nuxt 2.9.x
 * Vuetify
 * Sass-loader
+* Axios
+* TypeScript
+* ESLint
+* Jest
 
 ## 必要なもの
 
@@ -16,7 +20,7 @@
 1. ターミナルで実行
 
 ```
-git clone -b Nuxt https://github.com/fussy113/MyNodeDock.git
+git clone -b NuxtDock https://github.com/fussy113/MyNodeDock.git
 
 cd MyNodeDock
 
