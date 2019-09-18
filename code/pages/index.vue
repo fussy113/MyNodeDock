@@ -79,9 +79,9 @@
   </v-layout>
 </template>
 
-<script>
-import Logo from '@/components/organisms/Logo.vue'
-import VuetifyLogo from '@/components/organisms/VuetifyLogo.vue'
+<script lang="ts">
+import Logo from '~/components/Logo.vue'
+import VuetifyLogo from '~/components/VuetifyLogo.vue'
 
 export default {
   components: {
@@ -90,3 +90,7 @@ export default {
   }
 }
 </script>
+
+<style lang="sass" scoped>
+
+</style>

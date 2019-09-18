@@ -1,7 +1,7 @@
 {
   "name": "MyNodeDock",
   "version": "1.0.0",
-  "description": "My epic Nuxt.js project",
+  "description": "My smashing Nuxt.js project",
   "author": "",
   "private": true,
   "scripts": {
@@ -17,6 +17,7 @@
     "nuxt": "^2.0.0"
   },
   "devDependencies": {
+    "@nuxt/typescript-build": "^0.2.9",
     "@nuxtjs/eslint-config": "^1.0.1",
     "@nuxtjs/eslint-module": "^1.0.0",
     "@nuxtjs/vuetify": "^1.0.0",
